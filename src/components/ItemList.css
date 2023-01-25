@@ -1,0 +1,49 @@
+.taskBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2.3rem;
+  width: 38rem;
+  border-bottom: 1px var(--Light-Accent) solid;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  padding: 0.5rem 0rem 0rem 0.7rem;
+  position: relative;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.taskBox.done-true {
+  opacity: 0.4;
+}
+.taskBox.done-false:hover {
+  font-weight: 900;
+  cursor: default;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.taskBox span:last-child {
+  right: 1rem;
+  position: absolute;
+}
+.taskBox p {
+  padding-left: 1rem;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.taskBox span.toDone {
+  color: var(--Brand-Color);
+}
+.taskBox span.toDelete {
+  color: var(--Alert-Shade);
+}
+.taskBox span:hover {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  cursor: pointer;
+}
+.taskBox span:active {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 1;
+  cursor: pointer;
+  opacity: 0.8;
+}

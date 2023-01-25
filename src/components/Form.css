@@ -1,0 +1,53 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+  background: linear-gradient(0deg, var(--Light-Shade) -200%, transparent 90%);
+  border-bottom: 1px solid var(--Light-Shade);
+  box-shadow: 0px 0px 50px -40px var(--Dark-Shade);
+}
+form input {
+  width: 33rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: 1px var(--Dark-Shade) solid;
+  outline: none;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  padding-left: 1rem;
+}
+form input:focus {
+  border: 1px var(--Brand-Color) solid;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+form button {
+  margin: 0rem 0rem 0rem 2rem;
+  height: 2.15rem;
+  width: 4.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--Brand-Color);
+  border-radius: 5px;
+  border: 0px solid var(--Dark-Shade);
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  box-shadow: 2px 2px 3px 0px var(--Dark-Accent);
+}
+form button:hover {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  background: linear-gradient(
+    -45deg,
+    var(--Light-Accent) -200%,
+    transparent 150%
+  );
+  background-color: var(--Brand-Color);
+}
+form button:active {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  background: linear-gradient(
+    -45deg,
+    var(--Dark-Shade) -300%,
+    transparent 150%
+  );
+  background-color: var(--Brand-Color);
+  box-shadow: 2px 2px 5px 0px var(--Dark-Accent);
+}
